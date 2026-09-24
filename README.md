@@ -195,9 +195,9 @@ python -m unittest discover -s .\tests -v
 이 프로젝트는 두 개의 외부 저작물 위에서 만들어졌습니다.
 
 ### 1) Python PingPong API — 원 코드베이스
-`connection/`·`protocols/`의 통신·패킷 코드는 **Yeseung Kim (@rhgkrsus1)** 이 GNU GPLv3로 공개한 Python PingPong API에서 파생되었습니다.
+`connection/`·`protocols/`의 통신·패킷 코드는 **Yeseung Kim (@aries-robot)** 이 GNU GPLv3로 공개한 Python PingPong API에서 파생되었습니다.
 
-- 원 개발자: Yeseung Kim — GitHub <https://github.com/rhgkrsus1>
+- 원 개발자: Yeseung Kim — GitHub <https://github.com/aries-robot>
 - 원 코드베이스 커밋 이력(원 개발자 82커밋, 2019–2020)과 본인이 되살리며 추가한 3커밋(2026)은 다음 저장소에 그대로 보존되어 있습니다: <https://github.com/fast1ine/python-gcube-api-dashboard-piano>
 - 라이선스: **GNU GPLv3** (원 코드베이스와 동일).
 
@@ -214,6 +214,6 @@ PingPong 로봇 하드웨어·BLE 통신 프로토콜과 `reference/`의 Scratch
 ### 라이선스
 원 코드베이스를 따라 저장소 전체를 **GNU GPLv3**([`LICENSE`](LICENSE))로 배포합니다.
 
-- 원 Python PingPong API © Yeseung Kim (@rhgkrsus1)
+- 원 Python PingPong API © Yeseung Kim (@aries-robot)
 - 휠체어·우산 애플리케이션 및 2026년 추가분 © 2026 fast1ine
 - Roborisen 파생 구성요소(PingPong 프로토콜·Scratch 프로젝트)는 각 권리자(Roborisen)의 권리에 따릅니다.
