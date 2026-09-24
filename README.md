@@ -189,3 +189,16 @@ python -m unittest discover -s .\tests -v
 이 프로젝트는 시제품 제어 소프트웨어입니다. 사람이 탑승한 실제 휠체어에 적용하기 전에 물리 비상 정지, 전원 차단, 속도·토크 제한, 장애물 감지, 통신 끊김 자동 정지 및 우산 리미트 스위치를 별도로 확보해야 합니다.
 
 날씨 API 또는 네트워크 장애 시 자동 우산과 LED 날씨 갱신은 수행되지 않지만 수동 우산 버튼과 주행 제어는 계속 사용할 수 있습니다.
+
+## 출처 및 라이선스 (Credits and license)
+
+이 프로젝트는 로보라이즌(Roborisen)의 **PingPong** 로봇 플랫폼 위에서 동작합니다.
+
+- **원본·원저작권**: PingPong 로봇의 BLE 통신 프로토콜·패킷 형식과 `reference/`의 Scratch 프로젝트(원본 및 수정본 `.sb3`)는 Roborisen의 저작물입니다. 공식 사이트: <https://roborisen.com>
+- 본 저장소가 참조한 **원본 배포본은 현재 온라인에 공개되어 있지 않습니다**. 제작 이후 Roborisen이 새 버전으로 갱신·대체했기 때문입니다.
+- `protocols/`의 패킷 생성 코드는 상호운용을 위해 PingPong 패킷 형식에 맞춰 재구현한 것이며, 함수 명명은 PingPong SDK 관례를 따릅니다.
+- `reference/*.sb3`는 Roborisen PingPong Scratch 프로젝트에서 파생된 파일로, 분석·참고 목적으로만 포함했으며 저작권은 Roborisen에 있습니다.
+
+**직접 작성한 부분(그 외 전부)**: 데스크톱 UI(`app.py`, `main.py`), 기상청 API 연동(`weather.py`), TTS(`tts.py`), 하드웨어 통합(`hardware.py`), 설정·테스트 등.
+
+라이선스: 본 저장소에서 **직접 작성한 코드**는 [`LICENSE`](LICENSE)(GNU GPLv3)를 따릅니다. © 2026 fast1ine. 위에 명시한 Roborisen 파생 구성요소(PingPong 프로토콜·Scratch 프로젝트)는 GPLv3 적용 대상이 아니며 Roborisen의 권리에 따릅니다.
