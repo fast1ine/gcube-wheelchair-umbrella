@@ -192,13 +192,28 @@ python -m unittest discover -s .\tests -v
 
 ## 출처 및 라이선스 (Credits and license)
 
-이 프로젝트는 로보라이즌(Roborisen)의 **PingPong** 로봇 플랫폼 위에서 동작합니다.
+이 프로젝트는 두 개의 외부 저작물 위에서 만들어졌습니다.
 
-- **원본·원저작권**: PingPong 로봇의 BLE 통신 프로토콜·패킷 형식과 `reference/`의 Scratch 프로젝트(원본 및 수정본 `.sb3`)는 Roborisen의 저작물입니다. 공식 사이트: <https://roborisen.com>
-- 본 저장소가 참조한 **원본 배포본은 현재 온라인에 공개되어 있지 않습니다**. 제작 이후 Roborisen이 새 버전으로 갱신·대체했기 때문입니다.
-- `protocols/`의 패킷 생성 코드는 상호운용을 위해 PingPong 패킷 형식에 맞춰 재구현한 것이며, 함수 명명은 PingPong SDK 관례를 따릅니다.
-- `reference/*.sb3`는 Roborisen PingPong Scratch 프로젝트에서 파생된 파일로, 분석·참고 목적으로만 포함했으며 저작권은 Roborisen에 있습니다.
+### 1) Python PingPong API — 원 코드베이스
+`connection/`·`protocols/`의 통신·패킷 코드는 **Yeseung Kim (@rhgkrsus1)** 이 GNU GPLv3로 공개한 Python PingPong API에서 파생되었습니다.
 
-**직접 작성한 부분(그 외 전부)**: 데스크톱 UI(`app.py`, `main.py`), 기상청 API 연동(`weather.py`), TTS(`tts.py`), 하드웨어 통합(`hardware.py`), 설정·테스트 등.
+- 원 개발자: Yeseung Kim — GitHub <https://github.com/rhgkrsus1>
+- 원 코드베이스 커밋 이력(원 개발자 82커밋, 2019–2020)과 본인이 되살리며 추가한 3커밋(2026)은 다음 저장소에 그대로 보존되어 있습니다: <https://github.com/fast1ine/python-gcube-api-dashboard-piano>
+- 라이선스: **GNU GPLv3** (원 코드베이스와 동일).
 
-라이선스: 본 저장소에서 **직접 작성한 코드**는 [`LICENSE`](LICENSE)(GNU GPLv3)를 따릅니다. © 2026 fast1ine. 위에 명시한 Roborisen 파생 구성요소(PingPong 프로토콜·Scratch 프로젝트)는 GPLv3 적용 대상이 아니며 Roborisen의 권리에 따릅니다.
+### 2) Roborisen PingPong 플랫폼
+PingPong 로봇 하드웨어·BLE 통신 프로토콜과 `reference/`의 Scratch 프로젝트(`.sb3` 원본·수정본)는 **Roborisen** 의 저작물입니다.
+
+- 공식 사이트: <https://roborisen.com>
+- 본 저장소가 참조한 원본 배포본은 현재 온라인에 공개되어 있지 않습니다(제작 이후 Roborisen이 새 버전으로 대체).
+- `reference/*.sb3`는 Roborisen PingPong Scratch 프로젝트 파생물로, 분석·참고 목적으로만 포함했으며 저작권은 Roborisen에 있습니다.
+
+### 직접 작성한 부분
+휠체어·우산 제어 애플리케이션, 데스크톱 UI(`app.py`, `main.py`), 기상청 API 연동(`weather.py`), TTS(`tts.py`), 하드웨어 통합(`hardware.py`), 설정·테스트 등.
+
+### 라이선스
+원 코드베이스를 따라 저장소 전체를 **GNU GPLv3**([`LICENSE`](LICENSE))로 배포합니다.
+
+- 원 Python PingPong API © Yeseung Kim (@rhgkrsus1)
+- 휠체어·우산 애플리케이션 및 2026년 추가분 © 2026 fast1ine
+- Roborisen 파생 구성요소(PingPong 프로토콜·Scratch 프로젝트)는 각 권리자(Roborisen)의 권리에 따릅니다.
